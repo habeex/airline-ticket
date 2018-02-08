@@ -1,0 +1,75 @@
+img.logo{
+	margin-top: -5px;
+	width: 30px;
+	height: 30px;
+}
+
+.bigRectangle{
+	margin-top: 25px;
+	margin-left: 20px;
+    width: 300px;
+    height: 500px;
+    background: #001855;
+    border-radius: 20px;
+}
+
+.flightSearchBox {
+	font-family: georgia;
+	color: white; 
+}
+
+.centerAlign {
+	text-align: center;
+}
+
+.searchButton {
+	width: 100px;
+	background-color: gray;
+	height: 40px;
+}
+
+#timedMsgDiv {
+	font-size: 50px;
+	margin-top: 150px;
+	color: red;
+}
+
+.smallRectangle {
+	margin-top: 20px;
+	margin-left: 50px;
+	width: 300px;
+	height: 30px;
+	background-color: #F0ECA2;
+	border-radius: 10px;
+}
+
+.mediumRectangle {
+	margin-top: 20px;
+	margin-left: 50px;
+	width: 300px;
+	height: 250px;
+	background-color: #FDFDCC;
+	border-radius: 10px;
+}
+
+/*li { border-bottom: 1px solid #000000; }*/
+
+.last {
+	border-bottom: 0px solid #000000;
+}
+
+#loginPage{ 
+ background: url('/views/images/flight.jpg') no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.panel-default {
+ opacity: 0.9;
+ margin-top:30px;
+}
+.form-group.last {
+ margin-bottom:0px;
+}
