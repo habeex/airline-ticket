@@ -1,5 +1,5 @@
 <ul class="nav navbar-nav navbar-right">
-  <li><a href="/views/users/create.php"><span class="glyphicon glyphicon-user"></span>Register Now</a></li>
+  <li><a href="airline-ticket/views/users/create.php"><span class="glyphicon glyphicon-user"></span>Register Now</a></li>
   <li class="dropdown" id="menuLogin">
     <a class="dropdown-toggle" href="#" role="button" aria-expanded="false" data-toggle="dropdown" id="navLogin"><span class="glyphicon glyphicon-log-in"></span> Login<strong class="caret"></strong></a>
     <div class="dropdown-menu" style="padding: 17px; padding-bottom: 4px;">

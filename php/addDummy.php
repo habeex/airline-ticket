@@ -3,7 +3,9 @@
 // connect and set option
 $path = $_SERVER['DOCUMENT_ROOT'] . "/";
 
-require_once $path.'php/connect.php';
+//require_once $path.'php/connect.php';
+require_once('../php/connect.php');
+
 $sql = "INSERT INTO website_user VALUES ('anand@something.com', 'password', 'token', '1')";
 $db->query($sql);
 
@@ -17,4 +19,5 @@ $db->query($sql);
 // insert dummy flight
 $sql = "INSERT INTO flight VALUES ('9W343', 'Mumbai', 'Singapore', '2015-05-10', '2015-06-10', '200', 'ON TIME', 'anand@something.com', '400', '9W')";
 $db->query($sql);
+
 ?>

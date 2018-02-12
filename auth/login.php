@@ -2,7 +2,7 @@
 
 session_start();
 $path = $_SERVER['DOCUMENT_ROOT'] . "/";
-include($path. "auth/passwords.php"); 
+include($path. "airline-ticket/auth/passwords.php"); 
 
 if(array_key_exists("ac", $_POST)){
      if ($_POST["ac"]=="log") { 

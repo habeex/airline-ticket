@@ -6,11 +6,11 @@ $url = $_POST["url"];
 
 $path = $_SERVER['DOCUMENT_ROOT'] . "/";
 
-require_once ($path . 'php/connect.php');
+require_once ($path . 'airline-ticket/php/connect.php');
 
 $sql = "UPDATE airline SET name='".$name."', logo='".$url."' WHERE airline_code='".$code."';";
 $result = $db->query($sql);
 
-header ('Location: ' . '/views/flight_providers.php');
+header ('Location: ' . '../flight_providers.php');
 
 ?>

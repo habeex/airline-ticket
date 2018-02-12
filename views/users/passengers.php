@@ -1,16 +1,16 @@
-<?php $path = $_SERVER['DOCUMENT_ROOT'] . "/"; ?>
-<?php include( $path . "views/partials/global.php" ); ?>
+<?php include '../partials/global.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Discount Airlines - Create Account</title>
-	<?php include( $path . "views/partials/meta.php" ); ?>
-	<?php include( $path . "views/partials/styles.php" ); ?>
-	<?php include( $path . "views/partials/scripts.php" ); ?>
+	<?php include '../partials/meta.php'; ?>
+	<?php include '../partials/styles.php'; ?>
+	<?php include '../partials/scripts.php'; ?>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	<?php include( $path . "views/partials/navbar.php" ); ?>
-	<div class="container">
+<?php include '../partials/navbar.php';  ?>
+<div class="container">
 		<div class="row">
 			<div class="col-sm-4 col-xs-12">
 				<ul class="nav nav-pills nav-stacked">
@@ -61,7 +61,7 @@
 				<ol class="list-group">
 					<?php 
 
-	        require_once $path.'/php/connect.php';
+	        require_once $path.'airline-ticket/php/connect.php';
 
 	        $email = $_SESSION["logged"];
 

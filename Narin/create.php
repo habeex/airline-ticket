@@ -1,14 +1,15 @@
-<?php $path = $_SERVER['DOCUMENT_ROOT'] . "/"; ?>
+<?php include '../partials/global.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Discount Airlines - Create Account</title>
-  <?php include( $path . "partials/meta.php" ); ?>
-  <?php include( $path . "partials/styles.php" ); ?>
-  <?php include( $path . "partials/scripts.php" ); ?>
+	<?php include '../partials/meta.php'; ?>
+	<?php include '../partials/styles.php'; ?>
+	<?php include '../partials/scripts.php'; ?>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	<?php include( $path . "partials/navbar.php" ); ?>
+	<?php include '../partials/navbar.php';  ?>
 	<div class="container">
 			<div class="well">
 				<div class="row">

@@ -1,10 +1,10 @@
 <?php
 
 // connect and set option
-$path = $_SERVER['DOCUMENT_ROOT'] . "/";
-include( $path . "views/partials/global.php" ); 
+ include '../partials/global.php';
+ 
 
-require_once $path.'php/connect.php';
+ require_once $path . 'airline-ticket/php/connect.php';
 
 
 $flight_id = $_POST["flight_id"];
@@ -25,6 +25,6 @@ $sql = "UPDATE flight SET departure = '".$departure."', arrival = '".$arrival."'
 
 $db->query($sql);
 
-header('Location:' . "/views/flights.php" );
+header('Location:' . "../flights.php" );
 
 ?>   

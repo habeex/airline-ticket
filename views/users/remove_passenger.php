@@ -3,7 +3,7 @@
 // connect and set option
 $path = $_SERVER['DOCUMENT_ROOT'] . "/";
 
-require_once ($path.'php/connect.php');
+require_once ($path.'airline-ticket/php/connect.php');
 
 $passport = $_POST["passport"];
 $email = $_POST["email"];

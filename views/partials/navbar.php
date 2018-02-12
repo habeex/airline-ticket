@@ -8,10 +8,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">
-        <img alt="Brand" class="logo" src="/views/images/logo.png">
+      <a class="navbar-brand" href="index.php">
+        <img alt="Brand" class="logo" src="airline-ticket/views/images/logo.png">
       </a>
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" href="airline-ticket/index.php">
         Discount Airlines
       </a>
     </div>
@@ -19,7 +19,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="/views/users/profile.php">Profile</a></li>
         <?php
           if(isset($_SESSION["admin"])){

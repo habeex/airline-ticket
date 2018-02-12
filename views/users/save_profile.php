@@ -1,7 +1,7 @@
 <?php
 
-$path = $_SERVER['DOCUMENT_ROOT'] . "/";
-include( $path . "views/partials/global.php" );
+include '../partials/global.php'; 
+
 
 $firstname = $_POST["passenger-firstname"];
 $lastname = $_POST["passenger-lastname"];
@@ -12,7 +12,7 @@ $passport = $_POST["passenger-passport"];
 $country = $_POST["passenger-country"];
 $phone = $_POST["passenger-phone"];
 
-require_once ($path . 'php/connect.php');
+require_once ($path . 'airline-ticket/php/connect.php');
 
 $sql = "SELECT * FROM passenger WHERE passport='".$passport."' AND user_email='".$email."' AND self='".$self."';";
 $result = $db->query($sql);
@@ -28,5 +28,5 @@ if (empty($row)) {
 	$result = $db->query($sql);
 }
 
-header ('Location: ' . '/views/users/profile.php');
+header ('Location: ' . '../users/profile.php');
 ?>

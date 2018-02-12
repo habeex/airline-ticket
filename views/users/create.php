@@ -1,16 +1,16 @@
-<?php $path = $_SERVER['DOCUMENT_ROOT'] . "/"; ?>
-<?php include( $path . "views/partials/global.php" ); ?>
+<?php include '../partials/global.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Discount Airlines - Create Account</title>
-  <?php include( $path . "views/partials/meta.php" ); ?>
-  <?php include( $path . "views/partials/styles.php" ); ?>
-  <?php include( $path . "views/partials/scripts.php" ); ?>
+	<?php include '../partials/meta.php'; ?>
+	<?php include '../partials/styles.php'; ?>
+	<?php include '../partials/scripts.php'; ?>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	<?php include( $path . "views/partials/navbar.php" ); ?>
-	<?php if(isset($_SESSION["valid"])){
+<?php include '../partials/navbar.php';  ?>
+<?php if(isset($_SESSION["valid"])){
 			if(!$_SESSION["valid"]){
 				unset($_SESSION["valid"]);
 				echo '<center><h3 style="color:red">User Already Exists</h3></center>';

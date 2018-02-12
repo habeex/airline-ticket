@@ -2,7 +2,7 @@
 // connect and set option
 $path = $_SERVER['DOCUMENT_ROOT'] . "/";
 
-require_once $path.'php/connect.php';
+require_once $path.'airline-ticket/php/connect.php';
 
 $sql = 'SELECT email, password, is_admin FROM website_user';
 $results = $db->query($sql);
@@ -21,7 +21,7 @@ function check_logged(){
 	/// checks if a valid user has logged into the system, otherwise redirects to login page 
      global $_SESSION, $USERS; 
      if (!array_key_exists($_SESSION["logged"],$USERS)) { 
-          header("Location: ".$path."auth/login.php"); 
+          header("Location: ".$path."airline-ticket/auth/login.php"); 
      }; 
  }
 function is_user(){

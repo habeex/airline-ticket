@@ -1,8 +1,7 @@
 <?php 
 $path = $_SERVER['DOCUMENT_ROOT'] . "/";
 
-require_once ($path . 'php/connect.php');
-
+require_once $path . 'airline-ticket/php/connect.php';
 $flight_id = $_GET['flight_id'];
 $departure_date = $_GET['departure_date'];
 $user_email = $_GET['user_email'];

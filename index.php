@@ -1,15 +1,15 @@
-<?php include( "views/partials/global.php" ); ?>
+<?php 
+include 'views/partials/global.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Discount Airlines</title>
-  <link rel="./views/css/bootstrap.min.css">
-  <?php include( "views/partials/meta.php" ); ?>
-  <?php include( "views/partials/styles.php" ); ?>
-  <?php include( "views/partials/scripts.php" ); ?>
+  <?php include 'views/partials/meta.php'; ?>
+  <?php include 'views/partials/styles.php'; ?>
+  <?php include 'views/partials/scripts.php'; ?>
 </head>
 <body>
-  <?php include( "views/partials/navbar.php" ); ?>
+  <?php include 'views/partials/navbar.php'; ?>
   <div class="container" style="background-image: url(./views/images/flight.jpg); 
       height: 550px; width: 100%; background-size: cover; background-repeat: no-repeat;">
 
@@ -69,7 +69,12 @@
       <h3 class="centerAlign">Latest Flights</h3>
     </div>
     <div id="rectangle" class="mediumRectangle">
-      <?php require_once $path.'/php/connect.php';
+      <?php 
+      //require_once $path.'/php/connect.php';
+      //require_once('../php/connect.php');
+      require_once '/php/connect.php';
+
+
 
 
           $sql = "SELECT *
@@ -93,7 +98,12 @@
       <h3 class="centerAlign">Cheapest Flights</h3>
     </div>
     <div id="rectangle" class="mediumRectangle">
-    <?php require_once $path.'/php/connect.php';
+    <?php 
+    //require_once $path.'/php/connect.php';
+    //require_once('../php/connect.php');
+    require_once '/php/connect.php';
+
+
 
 
           $sql = "SELECT *

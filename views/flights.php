@@ -1,15 +1,16 @@
-<?php $path = $_SERVER['DOCUMENT_ROOT'] . "/"; ?>
-<?php include( $path . "views/partials/global.php" ); ?>
+<?php include '../partials/global.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Discount Airlines</title>
-  <?php include( $path . "views/partials/meta.php" ); ?>
-  <?php include( $path . "views/partials/styles.php" ); ?>
-  <?php include( $path . "views/partials/scripts.php" ); ?>
+  <?php include '../partials/meta.php'; ?>
+  <?php include '../partials/styles.php'; ?>
+  <?php include '../partials/scripts.php'; ?>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <?php include( $path . "views/partials/navbar.php" ); ?>
+  <?php include '../partials/navbar.php'; ?>	
+
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -17,7 +18,8 @@
 
         <?php 
 
-        require_once $path.'/php/connect.php';
+          require_once $path . 'airline-ticket/php/connect.php';
+
 
 
           $sql = "SELECT f.flight_id, f.departure, f.arrival, f.departure_date, f.arrival_date, f.departure_time, f.arrival_time, f.price, f.airline_code, f.passenger_limit, f.status_changed_by, a.logo, a.name
@@ -71,7 +73,7 @@
         ?>        
 
       </ol>
-      <a href="/views/flights/create.php" class="btn btn-primary">
+      <a href="../flights/create.php" class="btn btn-primary">
         Create New Flight
       </a>
     </div>

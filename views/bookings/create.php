@@ -1,18 +1,18 @@
-<?php $path = $_SERVER['DOCUMENT_ROOT'] . "/"; ?>
-<?php include( $path . "views/partials/global.php" ); ?>
+<?php include '../partials/global.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Discount Airlines</title>
-	<?php include( $path . "views/partials/meta.php" ); ?>
-	<?php include( $path . "views/partials/styles.php" ); ?>
-	<?php include( $path . "views/partials/scripts.php" ); ?>
+	<?php include '../partials/meta.php'; ?>
+	<?php include '../partials/styles.php'; ?>
+	<?php include '../partials/scripts.php'; ?>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	<?php include( $path . "views/partials/navbar.php" ); ?>
+	<?php include '../partials/navbar.php'; ?>
 	<?php 
-	require_once $path.'/php/connect.php';
-	$departure_date = '"'.$_GET["departureyear"]."-".$_GET["departuremonth"]."-".$_GET["departureday"].'"';
+	require_once $path . 'airline-ticket/php/connect.php';
+    $departure_date = '"'.$_GET["departureyear"]."-".$_GET["departuremonth"]."-".$_GET["departureday"].'"';
 	$departure_airport = '"'.$_GET["countryFrom"].'"';
 	$return_date = '"'.$_GET["returnyear"]."-".$_GET["returnmonth"]."-".$_GET["returnday"].'"';
 	$arrival_airport = '"'.$_GET["countryTo"].'"';
@@ -67,7 +67,9 @@
 				<?php } }?>
 			</div>
 		</div>
+
 		<!-- This section should only show if there is a return flight involved -->
+		
 		<?php if($_GET["flightType"] == "round"){ ?>
 		<?php 
 		$sql_return = sprintf('SELECT '.
@@ -163,7 +165,7 @@
 			var backwardId = $('.return-flight.active').attr('id') || "";
 			var backwardDate = $('.return-flight.active .depdate').text().trim();
 
-			location.href = "/views/bookings/details.php?" +
+			location.href = "../bookings/details.php?" +
 												"adults=" + adults + "&" +
 												"forward=" + forwardId + "&" +
 												"fdate=" + forwardDate + "&" +

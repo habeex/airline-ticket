@@ -8,6 +8,6 @@
         </ul>
     </li>
 
-  	<li><a href="/auth/logout.php"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>
+  	<li><a href="../logout.php"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>
 
 </ul>
